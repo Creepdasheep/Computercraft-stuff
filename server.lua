@@ -1,6 +1,5 @@
 
 function logo
- term.setTextColor( colors.green )
  print("                                      ")
  print("              @@@@@@@@@@@              ")
  print("           @@@@@@@@@@@@@@@@@@@          ")
@@ -17,7 +16,6 @@ function logo
  print("         @@@   @@@@@@@@@@@   @@@        ")
  print("      @@                         @@     ")
  print("                                        ")
- term.setTextColor( colors.white )
 end
 
 function app 
@@ -42,8 +40,9 @@ local codedata = (data.readAll())
 code.close()
 
 
-
+term.setTextColor( colors.green )
 logo()
+ term.setTextColor( colors.white )
 os.sleep(2)
 term.clear()
 print("What is the master code?")
